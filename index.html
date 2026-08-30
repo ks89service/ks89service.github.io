@@ -35,20 +35,22 @@
             box-shadow: 0 10px 25px rgba(0,0,0,0.1);
             text-align: center;
         }
+
+        /* === ปรับแต่งรองรับรูปโลโก้ 212.jpg ให้แสดงผลเต็มวงสวยงาม === */
         .logo-img {
-            width: 130px;
-            height: 130px;
+            width: 180px;
+            height: 180px;
             margin: 0 auto 15px auto;
             border-radius: 50%;
             overflow: hidden;
-            border: 4px solid #f59e0b;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+            box-shadow: 0 6px 15px rgba(0,0,0,0.15);
         }
         .logo-img img {
             width: 100%;
             height: 100%;
             object-fit: cover;
         }
+
         h1 {
             font-size: 24px;
             color: #0f172a;
@@ -113,22 +115,6 @@
         .box ul {
             list-style-position: inside;
         }
-        
-        /* สไตล์ตารางรูปภาพในหน้า 2 */
-        .gallery-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 12px;
-            margin-top: 10px;
-        }
-        .gallery-grid img {
-            width: 100%;
-            height: 150px;
-            object-fit: cover;
-            border-radius: 10px;
-            border: 1px solid #cbd5e1;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
-        }
 
         .area-tags {
             display: flex;
@@ -186,6 +172,14 @@
         .btn-line:hover {
             background-color: #05b34c;
         }
+        .btn-website {
+            background-color: #0284c7;
+            font-size: 16px;
+            padding: 16px;
+        }
+        .btn-website:hover {
+            background-color: #0369a1;
+        }
         .contact-info {
             font-size: 13px;
             color: #64748b;
@@ -198,18 +192,18 @@
 
     <div class="container">
         
-        <!-- โลโก้ร้าน KS.SERVICE -->
+        <!-- โลโก้ร้าน KS.SERVICE (ระบุชื่อไฟล์ 212.jpg) -->
         <div class="logo-img">
-            <img src="logo.png" alt="KS.SERVICE เกียรติพงษ์">
+            <img src="212.jpg" alt="KS.SERVICE เกียรติพงษ์">
         </div>
         
         <h1>KS.SERVICE (เกียรติพงษ์)</h1>
-        <div class="tagline">บริการซ่อม-ติดตั้ง ปั๊มน้ำ และระบบประปา</div>
+        <div class="tagline">บริการซ่อม-ติดตั้ง ปั๊มน้ำ และระบบประปาครบวงจร</div>
 
         <!-- ปุ่มเมนูสลับหน้า 1 และ หน้า 2 -->
         <div class="tab-menu">
-            <button class="tab-btn active" onclick="switchPage(1)">หน้า 1 : บริการ</button>
-            <button class="tab-btn" onclick="switchPage(2)">หน้า 2 : งานของช่าง</button>
+            <button class="tab-btn active" onclick="switchPage(1, event)">หน้า 1 : บริการ</button>
+            <button class="tab-btn" onclick="switchPage(2, event)">หน้า 2 : เว็บไซต์หลัก</button>
         </div>
 
         <!-- ==================== เนื้อหา หน้า 1 ==================== -->
@@ -222,12 +216,12 @@
             <div class="box">
                 <h3>🛠️ บริการของเรา</h3>
                 <ul>
-                    <li>รับซ่อมและงานติดตั้ง ปั๊มน้ำ / ปั๊มสูบน้ำ</li>
+                    <li>รับซ่อมและงานติดตั้ง ปั๊มน้ำทุกชนิด / ปั๊มสูบน้ำ</li>
                     <li>ซ่อม Booster Pump (ซ่อมบูสเตอร์ปั๊ม)</li>
                     <li>ติดตั้ง Transfer Pump (ติดตั้งทรานเฟอร์ปั๊ม)</li>
                     <li>ติดตั้งและซ่อม ระบบระบายน้ำหมู่บ้าน / โรงงาน</li>
                     <li>ท่อสูบน้ำพญานาค / ไดโว่ปั๊มจุ่ม</li>
-                    <li>งานเดินระบบท่อประปา pvc/ppr</li>
+                    <li>งานเดินระบบท่อประปาทุกประเภท</li>
                 </ul>
             </div>
 
@@ -260,21 +254,21 @@
 
         <!-- ==================== เนื้อหา หน้า 2 ==================== -->
         <div id="page2" class="page-content">
-            <div class="box">
-                <h3>📷 ภาพผลงานการทำงานจริง</h3>
-                <p style="font-size: 13px; color: #64748b; margin-bottom: 10px;">รวมตัวอย่างงานซ่อม ติดตั้งปั๊มน้ำ และระบบประปา</p>
-                <div class="gallery-grid">
-                    <img src="work1.jpg" alt="ผลงาน 1">
-                    <img src="work2.jpg" alt="ผลงาน 2">
-                    <img src="work3.jpg" alt="ผลงาน 3">
-                    <img src="work4.jpg" alt="ผลงาน 4">
-                </div>
+            <div class="box" style="text-align: center; padding: 25px 15px;">
+                <h3 style="border: none; font-size: 18px; margin-bottom: 10px;">🌐 เว็บไซต์อย่างเป็นทางการ</h3>
+                <p style="color: #64748b; font-size: 14px; margin-bottom: 20px;">
+                    คลิกเพื่อเข้าชมรายละเอียดบริการ ผลงาน และข้อมูลเพิ่มเติมได้ที่เว็บไซต์หลัก
+                </p>
+                
+                <a href="https://www.ksservice89.com/home" target="_blank" rel="noopener noreferrer" class="btn btn-website">
+                    🚀 ไปที่ www.ksservice89.com
+                </a>
             </div>
         </div>
 
         <!-- ปุ่มติดต่อ แสดงผลทั้งสองหน้า -->
         <a href="tel:0827127490" class="btn btn-phone">📞 โทรติดต่อช่าง: 082-712-7490</a>
-        <a href="https://line.me/ti/p/QJdH5oCjIM" target="_blank" class="btn btn-line">💬 แอด LINE: 0827127490</a>
+        <a href="https://line.me/ti/p/QJdH5oCjIM" target="_blank" rel="noopener noreferrer" class="btn btn-line">💬 แอด LINE: 0827127490</a>
 
         <div class="contact-info">
             เปิดให้บริการทุกวัน | ยินดีให้คำปรึกษาและประเมินงานเบื้องต้น
@@ -284,12 +278,19 @@
 
     <!-- คำสั่ง JavaScript สลับหน้า -->
     <script>
-        function switchPage(pageNumber) {
-            // ซ่อนทุกหน้า
+        function switchPage(pageNumber, event) {
             document.querySelectorAll('.page-content').forEach(page => {
                 page.classList.remove('active');
             });
-            // เอาสถานะ active ออกจากปุ่มทั้งหมด
             document.querySelectorAll('.tab-btn').forEach(btn => {
                 btn.classList.remove('active');
-  
+            });
+
+            document.getElementById('page' + pageNumber).classList.add('active');
+            event.currentTarget.classList.add('active');
+        }
+    </script>
+
+</body>
+                                              </html>
+                                              
