@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KS.SERVICE เกียรติพงษ์ - ซ่อม-ติดตั้ง ปั๊มน้ำ บูสเตอร์ปั๊ม ระบบประปา</title>
     
+    <!-- === KEYWORDS และ SEO สำหรับ Google === -->
     <meta name="description" content="KS.SERVICE เกียรติพงษ์ รับซ่อมและติดตั้ง ปั๊มน้ำอาคาร ที่พักอาศัย ปั๊มสูบน้ำระบบระบายน้ำหมู่บ้าน โรงงาน รับงานเดินระบบท่อประปา pvc ppr โทร 082-712-7490">
     <meta name="keywords" content="KS.SERVICE, เกียรติพงษ์, รับซ่อมและติดตั้งปั๊มน้ำอาคาร, ที่พักอาศัย, ปั๊มสูบน้ำระบบระบายน้ำหมู่บ้าน, โรงงาน, รับงานเดินระบบท่อประปา pvc ppr, บางจาก, บางนา, อ่อนนุช, พระโขนง, ลาซาล, แบริ่ง, กิ่งแก้ว, สวนหลวง, พัฒนาการ, ศรีนครินทร์, ประเวศ, หนองบอน, ลาดกระบัง, กรุงเทพกรีฑา, บูสเตอร์ปั๊ม, ทรานเฟอร์ปั๊ม, ไดโว่ปั๊มจุ่ม, ท่อสูบน้ำพญานาค">
     <meta name="author" content="KS.SERVICE">
@@ -207,6 +208,7 @@
 
     <div class="container">
         
+        <!-- โลโก้ร้าน KS.SERVICE -->
         <div class="logo-img">
             <img src="851.png" alt="KS.SERVICE เกียรติพงษ์">
         </div>
@@ -214,16 +216,19 @@
         <h1>KS.SERVICE (เกียรติพงษ์)</h1>
         <div class="tagline">บริการซ่อม-ติดตั้ง ปั๊มน้ำ และระบบประปา</div>
 
+        <!-- ปุ่มเมนูสลับหน้า 1 และ หน้า 2 -->
         <div class="tab-menu">
             <button class="tab-btn active" onclick="switchPage(1)">หน้า 1 : บริการ</button>
             <button class="tab-btn" onclick="switchPage(2)">หน้า 2 : ผลงาน</button>
         </div>
 
+        <!-- ==================== เนื้อหา หน้า 1 ==================== -->
         <div id="page1" class="page-content active">
             <div class="highlight-text">
                 📞 โทรสอบถามรายละเอียด แก้ไขปัญหาเบื้องต้น<br>หรือเรียกใช้บริการช่างได้เลยครับ!
             </div>
 
+            <!-- รายละเอียดบริการ -->
             <div class="box">
                 <h3>🛠️ บริการของเรา</h3>
                 <ul>
@@ -236,6 +241,7 @@
                 </ul>
             </div>
 
+            <!-- พื้นที่ให้บริการ -->
             <div class="box">
                 <h3>📍 เขตพื้นที่ให้บริการใกล้เคียง</h3>
                 <div class="area-tags">
@@ -252,5 +258,369 @@
                     <span class="tag">ประเวศ</span>
                     <span class="tag">หนองบอน</span>
                     <span class="tag">ลาดกระบัง</span>
-                    <span class="tag">กรุงเทพกรีฑ
-                        
+                    <span class="tag">กรุงเทพกรีฑา</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- ==================== เนื้อหา หน้า 2 ==================== -->
+        <div id="page2" class="page-content">
+            <div class="box">
+                <h3>📷 ภาพผลงานการทำงานจริง</h3>
+                <p style="font-size: 13px; color: #64748b; margin-bottom: 10px;">รวมตัวอย่างงานซ่อม ติดตั้งปั๊มน้ำ และระบบประปา</p>
+                <div class="gallery-grid">
+                    <img src="work1.jpg" alt="ผลงาน 1">
+                    <img src="work2.jpg" alt="ผลงาน 2">
+                    <img src="work3.jpg" alt="ผลงาน 3">
+                    <img src="work4.jpg" alt="ผลงาน 4">
+                </div>
+            </div>
+        </div>
+
+        <!-- ปุ่มติดต่อ แสดงผลทั้งสองหน้า -->
+        <a href="tel:0827127490" class="btn btn-phone">📞 โทรติดต่อช่าง: 082-712-7490</a>
+        <a href="https://line.me/ti/p/QJdH5oCjIM" target="_blank" class="btn btn-line">💬 แอด LINE: 0827127490</a>
+        
+        <!-- เพิ่มปุ่มเว็บไซต์หลัก -->
+        <a href="https://www.ksservice89.com/home" target="_blank" class="btn btn-website">🌐 เข้าสู่เว็บไซต์หลัก</a>
+
+        <div class="contact-info">
+            เปิดให้บริการทุกวัน | ยินดีให้คำปรึกษาและประเมินงานเบื้องต้น
+        </div>
+
+    </div>
+
+    <!-- คำสั่ง JavaScript สลับหน้า -->
+    <script>
+        function switchPage(pageNumber) {
+            // ซ่อนทุกหน้า
+            document.querySelectorAll('.page-content').forEach(page => {
+                page.classList.remove('active');
+            });
+            // เอาสถานะ active ออกจากปุ่มทั้งหมด
+            document.querySelectorAll('.tab-btn').forEach(btn => {
+                btn.classList.remove('active');
+            });
+
+            // แสดงเนื้อหาของหน้าที่เลือก
+            document.getElementById('page' + pageNumber).classList.add('active');
+            
+            // เพิ่มสถานะ active ให้ปุ่มที่ถูกกด
+            document.querySelectorAll('.tab-btn')[pageNumber - 1].classList.add('active');
+        }
+    </script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KS.SERVICE เกียรติพงษ์ - ซ่อม-ติดตั้ง ปั๊มน้ำ บูสเตอร์ปั๊ม ระบบประปา</title>
+    
+    <!-- === KEYWORDS และ SEO สำหรับ Google === -->
+    <meta name="description" content="KS.SERVICE เกียรติพงษ์ รับซ่อมและติดตั้ง ปั๊มน้ำอาคาร ที่พักอาศัย ปั๊มสูบน้ำระบบระบายน้ำหมู่บ้าน โรงงาน รับงานเดินระบบท่อประปา pvc ppr โทร 082-712-7490">
+    <meta name="keywords" content="KS.SERVICE, เกียรติพงษ์, รับซ่อมและติดตั้งปั๊มน้ำอาคาร, ที่พักอาศัย, ปั๊มสูบน้ำระบบระบายน้ำหมู่บ้าน, โรงงาน, รับงานเดินระบบท่อประปา pvc ppr, บางจาก, บางนา, อ่อนนุช, พระโขนง, ลาซาล, แบริ่ง, กิ่งแก้ว, สวนหลวง, พัฒนาการ, ศรีนครินทร์, ประเวศ, หนองบอน, ลาดกระบัง, กรุงเทพกรีฑา, บูสเตอร์ปั๊ม, ทรานเฟอร์ปั๊ม, ไดโว่ปั๊มจุ่ม, ท่อสูบน้ำพญานาค">
+    <meta name="author" content="KS.SERVICE">
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, 'Prompt';
+        }
+        body {
+            background-color: #f0f4f8;
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+        .container {
+            background: #ffffff;
+            max-width: 580px;
+            width: 100%;
+            padding: 30px 20px;
+            border-radius: 20px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        .logo-img {
+            width: 130px;
+            height: 130px;
+            margin: 0 auto 15px auto;
+            border-radius: 50%;
+            overflow: hidden;
+            border: 4px solid #f59e0b;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+        }
+        .logo-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        h1 {
+            font-size: 24px;
+            color: #0f172a;
+            margin-bottom: 5px;
+        }
+        .tagline {
+            color: #d97706;
+            font-size: 15px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        /* เมนูปุ่มสลับหน้า 1 / หน้า 2 */
+        .tab-menu {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+        .tab-btn {
+            flex: 1;
+            padding: 12px;
+            border: 2px solid #0284c7;
+            background-color: #ffffff;
+            color: #0284c7;
+            border-radius: 10px;
+            font-size: 15px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        .tab-btn.active {
+            background-color: #0284c7;
+            color: #ffffff;
+        }
+
+        /* ส่วนเนื้อหาของแต่ละหน้า */
+        .page-content {
+            display: none;
+        }
+        .page-content.active {
+            display: block;
+        }
+
+        .box {
+            background: #f8fafc;
+            border: 1px solid #e2e8f0;
+            border-radius: 12px;
+            padding: 16px;
+            text-align: left;
+            margin-bottom: 15px;
+            font-size: 14px;
+            line-height: 1.6;
+            color: #334155;
+        }
+        .box h3 {
+            color: #0f172a;
+            font-size: 15px;
+            margin-bottom: 8px;
+            border-bottom: 2px solid #f59e0b;
+            padding-bottom: 4px;
+        }
+        .box ul {
+            list-style-position: inside;
+        }
+        
+        /* สไตล์ตารางรูปภาพในหน้า 2 */
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 12px;
+            margin-top: 10px;
+        }
+        .gallery-grid img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 10px;
+            border: 1px solid #cbd5e1;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+
+        .area-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+            margin-top: 8px;
+        }
+        .tag {
+            background-color: #fef3c7;
+            color: #92400e;
+            padding: 4px 10px;
+            border-radius: 6px;
+            font-size: 12px;
+            font-weight: 500;
+        }
+        .highlight-text {
+            background-color: #ecfdf5;
+            color: #065f46;
+            border: 1px solid #a7f3d0;
+            padding: 12px;
+            border-radius: 10px;
+            font-size: 14px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            line-height: 1.5;
+        }
+        
+        /* สไตล์ของปุ่มติดต่อต่างๆ */
+        .btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            width: 100%;
+            padding: 14px;
+            margin: 10px 0;
+            color: white;
+            text-decoration: none;
+            border-radius: 10px;
+            font-weight: bold;
+            font-size: 16px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.1s, background 0.2s;
+        }
+        .btn:active {
+            transform: scale(0.98);
+        }
+        .btn-phone {
+            background-color: #d97706;
+        }
+        .btn-phone:hover {
+            background-color: #b45309;
+        }
+        .btn-line {
+            background-color: #06c755;
+        }
+        .btn-line:hover {
+            background-color: #05b34c;
+        }
+        /* เพิ่มสไตล์สำหรับปุ่มเว็บไซต์ */
+        .btn-website {
+            background-color: #0284c7;
+        }
+        .btn-website:hover {
+            background-color: #0369a1;
+        }
+
+        .contact-info {
+            font-size: 13px;
+            color: #64748b;
+            margin-top: 15px;
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="container">
+        
+        <!-- โลโก้ร้าน KS.SERVICE -->
+        <div class="logo-img">
+            <img src="851.png" alt="KS.SERVICE เกียรติพงษ์">
+        </div>
+        
+        <h1>KS.SERVICE (เกียรติพงษ์)</h1>
+        <div class="tagline">บริการซ่อม-ติดตั้ง ปั๊มน้ำ และระบบประปา</div>
+
+        <!-- ปุ่มเมนูสลับหน้า 1 และ หน้า 2 -->
+        <div class="tab-menu">
+            <button class="tab-btn active" onclick="switchPage(1)">หน้า 1 : บริการ</button>
+            <button class="tab-btn" onclick="switchPage(2)">หน้า 2 : ผลงาน</button>
+        </div>
+
+        <!-- ==================== เนื้อหา หน้า 1 ==================== -->
+        <div id="page1" class="page-content active">
+            <div class="highlight-text">
+                📞 โทรสอบถามรายละเอียด แก้ไขปัญหาเบื้องต้น<br>หรือเรียกใช้บริการช่างได้เลยครับ!
+            </div>
+
+            <!-- รายละเอียดบริการ -->
+            <div class="box">
+                <h3>🛠️ บริการของเรา</h3>
+                <ul>
+                    <li>รับซ่อมและติดตั้ง ปั๊มน้ำอาคาร ที่พักอาศัย</li>
+                    <li>ปั๊มสูบน้ำระบบระบายน้ำหมู่บ้าน โรงงาน</li>
+                    <li>ซ่อม Booster Pump (ซ่อมบูสเตอร์ปั๊ม)</li>
+                    <li>ติดตั้ง Transfer Pump (ติดตั้งทรานเฟอร์ปั๊ม)</li>
+                    <li>ท่อสูบน้ำพญานาค / ไดโว่ปั๊มจุ่ม</li>
+                    <li>รับงานเดินระบบท่อประปา pvc ppr</li>
+                </ul>
+            </div>
+
+            <!-- พื้นที่ให้บริการ -->
+            <div class="box">
+                <h3>📍 เขตพื้นที่ให้บริการใกล้เคียง</h3>
+                <div class="area-tags">
+                    <span class="tag">บางจาก</span>
+                    <span class="tag">บางนา</span>
+                    <span class="tag">อ่อนนุช</span>
+                    <span class="tag">พระโขนง</span>
+                    <span class="tag">ลาซาล</span>
+                    <span class="tag">แบริ่ง</span>
+                    <span class="tag">กิ่งแก้ว</span>
+                    <span class="tag">สวนหลวง</span>
+                    <span class="tag">พัฒนาการ</span>
+                    <span class="tag">ศรีนครินทร์</span>
+                    <span class="tag">ประเวศ</span>
+                    <span class="tag">หนองบอน</span>
+                    <span class="tag">ลาดกระบัง</span>
+                    <span class="tag">กรุงเทพกรีฑา</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- ==================== เนื้อหา หน้า 2 ==================== -->
+        <div id="page2" class="page-content">
+            <div class="box">
+                <h3>📷 ภาพผลงานการทำงานจริง</h3>
+                <p style="font-size: 13px; color: #64748b; margin-bottom: 10px;">รวมตัวอย่างงานซ่อม ติดตั้งปั๊มน้ำ และระบบประปา</p>
+                <div class="gallery-grid">
+                    <img src="work1.jpg" alt="ผลงาน 1">
+                    <img src="work2.jpg" alt="ผลงาน 2">
+                    <img src="work3.jpg" alt="ผลงาน 3">
+                    <img src="work4.jpg" alt="ผลงาน 4">
+                </div>
+            </div>
+        </div>
+
+        <!-- ปุ่มติดต่อ แสดงผลทั้งสองหน้า -->
+        <a href="tel:0827127490" class="btn btn-phone">📞 โทรติดต่อช่าง: 082-712-7490</a>
+        <a href="https://line.me/ti/p/QJdH5oCjIM" target="_blank" class="btn btn-line">💬 แอด LINE: 0827127490</a>
+        
+        <!-- เพิ่มปุ่มเว็บไซต์หลัก -->
+        <a href="https://www.ksservice89.com/home" target="_blank" class="btn btn-website">🌐 เข้าสู่เว็บไซต์หลัก</a>
+
+        <div class="contact-info">
+            เปิดให้บริการทุกวัน | ยินดีให้คำปรึกษาและประเมินงานเบื้องต้น
+        </div>
+
+    </div>
+
+    <!-- คำสั่ง JavaScript สลับหน้า -->
+    <script>
+        function switchPage(pageNumber) {
+            // ซ่อนทุกหน้า
+            document.querySelectorAll('.page-content').forEach(page => {
+                page.classList.remove('active');
+            });
+            // เอาสถานะ active ออกจากปุ่มทั้งหมด
+            document.querySelectorAll('.tab-btn').forEach(btn => {
+                btn.classList.remove('active');
+            });
+
+            // แสดงเนื้อหาของหน้าที่เลือก
+            document.getElementById('page' + pageNumber).classList.add('active');
+            
+            // เพิ่มสถานะ active ให้ปุ่มที่ถูกกด
+            document.querySelectorAll('.tab-btn')[pageNumber - 1].classList.add('active');
+        }
+    </script>
+</body>
+</html>
