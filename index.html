@@ -6,6 +6,21 @@
     <meta name="keywords" content="ช่างซ่อมปั๊มน้ำใกล้ฉัน, ซ่อมปั๊มน้ำ, ซ่อม Booster Pump, ซ่อมบูสเตอร์ปั๊ม, ติดตั้ง Transfer Pump, ติดตั้งทรานเฟอร์ปั๊ม, ระบบระบายน้ำ, ท่อสูบน้ำพญานาค, ไดโว่ปั๊มจุ่ม, เดินระบบท่อประปา">
     <meta name="description" content="KS.SERVICE รับซ่อมและติดตั้งปั๊มน้ำ บูสเตอร์ปั๊ม ทรานเฟอร์ปั๊ม ระบบระบายน้ำ ไดโว่ปั๊มจุ่ม เดินท่อประปา ให้บริการในเขตบางนา ประเวศ อ่อนนุช ลาซาล แบริ่ง ศรีนครินทร์ สมุทรปราการ และพื้นที่ใกล้เคียง">
     <title>KS.SERVICE (ซ่อมติดตั้งระบบปั๊มน้ำ) - ช่างซ่อมปั๊มน้ำใกล้ฉัน</title>
+
+    <!-- โครงสร้างข้อมูล Schema.org สำหรับ Local Business -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Plumber",
+      "name": "KS.SERVICE (เกียรติพงษ์)",
+      "image": "https://www.ksservice89.com/home",
+      "telephone": "082-712-7490",
+      "url": "https://www.ksservice89.com/home",
+      "areaServed": ["บางนา", "ประเวศ", "พระโขนง", "ราชาเทวะ", "อุดมสุข", "ลาซาล", "แบริ่ง", "อ่อนนุช", "สวนหลวง", "พัฒนาการ", "สุขุมวิท", "ศรีนครินทร์", "กิ่งแก้ว", "ลาดกระบัง", "บางจาก", "สำโรง", "วัฒนา", "เอกมัย", "สมุทรปราการ"],
+      "description": "บริการซ่อมและติดตั้งปั๊มน้ำ บูสเตอร์ปั๊ม ทรานเฟอร์ปั๊ม ระบบระบายน้ำ ไดโว่ปั๊มจุ่ม และเดินระบบท่อประปา"
+    }
+    </script>
+
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -14,16 +29,23 @@
             max-width: 800px;
             margin: 0 auto;
             padding: 20px;
-            background-color: #f9fafb;
-        }
-        .container {
-            background-color: #ffffff;
-            padding: 30px;
-            border-radius: 12px;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+            background-color: #0f172a; 
+            background-image: 
+                linear-gradient(rgba(15, 23, 42, 0.75), rgba(15, 23, 42, 0.75)), 
+                url('https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=1920&q=80');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
         }
 
-        /* ส่วน Header Logo ด้านบน */
+        .container {
+            background-color: rgba(255, 255, 255, 0.96);
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+        }
+
         .brand-header {
             display: flex;
             align-items: center;
@@ -32,26 +54,32 @@
             border-bottom: 2px solid #e5e7eb;
             margin-bottom: 25px;
         }
+
+        /* ปรับแต่งกล่องโลโก้รูปภาพ */
         .logo-box {
-            width: 65px;
-            height: 65px;
-            background: linear-gradient(135deg, #1a56db, #0d369f);
-            border-radius: 12px;
+            width: 75px;
+            height: 75px;
+            border-radius: 50%; /* ทำขอบรูปให้เป็นวงกลม */
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+            flex-shrink: 0;
             display: flex;
             align-items: center;
             justify-content: center;
-            box-shadow: 0 4px 10px rgba(26, 86, 219, 0.3);
-            flex-shrink: 0;
+            background-color: #000000;
         }
-        .logo-box svg {
-            width: 38px;
-            height: 38px;
-            fill: #ffffff;
+
+        .logo-box img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* ครอบตัดรูปให้พอดีกล่องโดยไม่เบี้ยว */
+            display: block;
         }
+
         .brand-title h1 {
             color: #1a56db;
             margin: 0;
-            font-size: 26px;
+            font-size: 24px;
         }
         .brand-title p {
             margin: 3px 0 0 0;
@@ -131,16 +159,14 @@
 <body>
 
     <div class="container">
-        <!-- เพิ่มส่วน Header แสดงโลโก้แบรนด์ด้านบนสุด -->
+        <!-- Header แสดงโลโก้แบรนด์และ Keyword หลัก -->
         <div class="brand-header">
             <div class="logo-box">
-                <!-- SVG Icon แสดงสัญลักษณ์ปั๊มน้ำ/หยดน้ำและประแจ -->
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                    <path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0zM12 18a4 4 0 0 0 4-4c0-1.5-1.5-3.5-4-6-2.5 2.5-4 4.5-4 6a4 4 0 0 0 4 4z"/>
-                </svg>
+                <!-- ใส่รูปโลโก้ KS.SERVICE ตรงนี้ -->
+                <img src="logo.jpg" alt="KS.SERVICE ช่างซ่อมปั๊มน้ำเกียรติพงษ์">
             </div>
             <div class="brand-title">
-                <h1>KS.SERVICE (เกียรติพงษ์)</h1>
+                <h1>KS.SERVICE ช่างซ่อมปั๊มน้ำใกล้ฉัน (เกียรติพงษ์)</h1>
                 <p>บริการซ่อม-ติดตั้งปั๊มน้ำและระบบประปาครบวงจร</p>
             </div>
         </div>
@@ -198,7 +224,6 @@
                     </defs>
                     <rect width="550" height="110" rx="12" fill="url(#grad)" />
                     <circle cx="50" cy="55" r="30" fill="#ffffff" fill-opacity="0.15" />
-                    <!-- ไอคอนโลโก้ในแบนเนอร์ -->
                     <path d="M50 35 C40 35 32 43 32 55 C32 67 50 82 50 82 C50 82 68 67 68 55 C68 43 60 35 50 35 Z" fill="#ffffff" />
                     <text x="95" y="48" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#ffffff">KS.SERVICE (เกียรติพงษ์)</text>
                     <text x="95" y="73" font-family="Arial, sans-serif" font-size="14" fill="#e0e7ff">คลิกที่นี่เพื่อเข้าชมเว็บไซต์ www.ksservice89.com</text>
