@@ -1,9 +1,8 @@
-ข<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="th">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Meta Keywords และ Description เพื่อรองรับการค้นหาบน Google -->
     <meta name="keywords" content="ช่างซ่อมปั๊มน้ำใกล้ฉัน, ซ่อมปั๊มน้ำ, ซ่อม Booster Pump, ซ่อมบูสเตอร์ปั๊ม, ติดตั้ง Transfer Pump, ติดตั้งทรานเฟอร์ปั๊ม, ระบบระบายน้ำ, ท่อสูบน้ำพญานาค, ไดโว่ปั๊มจุ่ม, เดินระบบท่อประปา">
     <meta name="description" content="KS.SERVICE รับซ่อมและติดตั้งปั๊มน้ำ บูสเตอร์ปั๊ม ทรานเฟอร์ปั๊ม ระบบระบายน้ำ ไดโว่ปั๊มจุ่ม เดินท่อประปา ให้บริการในเขตบางนา ประเวศ อ่อนนุช ลาซาล แบริ่ง ศรีนครินทร์ สมุทรปราการ และพื้นที่ใกล้เคียง">
     <title>KS.SERVICE (เกียรติพงษ์) - ช่างซ่อมปั๊มน้ำใกล้ฉัน</title>
@@ -23,10 +22,43 @@
             border-radius: 12px;
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
         }
-        h1 {
-            color: #1a56db;
-            margin-bottom: 8px;
+
+        /* ส่วน Header Logo ด้านบน */
+        .brand-header {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            padding-bottom: 20px;
+            border-bottom: 2px solid #e5e7eb;
+            margin-bottom: 25px;
         }
+        .logo-box {
+            width: 65px;
+            height: 65px;
+            background: linear-gradient(135deg, #1a56db, #0d369f);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 10px rgba(26, 86, 219, 0.3);
+            flex-shrink: 0;
+        }
+        .logo-box svg {
+            width: 38px;
+            height: 38px;
+            fill: #ffffff;
+        }
+        .brand-title h1 {
+            color: #1a56db;
+            margin: 0;
+            font-size: 26px;
+        }
+        .brand-title p {
+            margin: 3px 0 0 0;
+            color: #4b5563;
+            font-weight: 500;
+        }
+
         h2, h3 {
             color: #1e429f;
             border-left: 4px solid #1a56db;
@@ -47,7 +79,6 @@
             margin-bottom: 10px;
             font-size: 16px;
         }
-        /* จัดรูปแบบพื้นที่ให้บริการแบบ Tag */
         .area-tags {
             display: flex;
             flex-wrap: wrap;
@@ -62,7 +93,6 @@
             font-size: 14px;
             font-weight: 500;
         }
-        /* รูปภาพป้ายแบนเนอร์ลิงก์ */
         .banner-container {
             margin: 30px 0 20px 0;
             text-align: center;
@@ -74,13 +104,14 @@
             overflow: hidden;
             box-shadow: 0 4px 15px rgba(26, 86, 219, 0.25);
             transition: transform 0.2s;
+            width: 100%;
         }
         .banner-link:hover {
             transform: translateY(-2px);
         }
         .banner-link svg {
             display: block;
-            max-width: 100%;
+            width: 100%;
             height: auto;
         }
         .contact-section {
@@ -100,7 +131,20 @@
 <body>
 
     <div class="container">
-        <h1>KS.SERVICE (ซ่อมติดตั้งปั๊มน้ำ)</h1>
+        <!-- เพิ่มส่วน Header แสดงโลโก้แบรนด์ด้านบนสุด -->
+        <div class="brand-header">
+            <div class="logo-box">
+                <!-- SVG Icon แสดงสัญลักษณ์ปั๊มน้ำ/หยดน้ำและประแจ -->
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0zM12 18a4 4 0 0 0 4-4c0-1.5-1.5-3.5-4-6-2.5 2.5-4 4.5-4 6a4 4 0 0 0 4 4z"/>
+                </svg>
+            </div>
+            <div class="brand-title">
+                <h1>KS.SERVICE (เกียรติพงษ์)</h1>
+                <p>บริการซ่อม-ติดตั้งปั๊มน้ำและระบบประปาครบวงจร</p>
+            </div>
+        </div>
+
         <p>ให้บริการซ่อม-ติดตั้งปั๊มน้ำและระบบประปา โทรติดต่อสอบถามแก้ไขปัญหาหรือเรียกใช้บริการช่างได้เลยครับ</p>
 
         <!-- รายการขอบเขตบริการ -->
@@ -142,7 +186,7 @@
             </div>
         </div>
 
-        <!-- ลิงก์รูปภาพไปที่เว็บไซต์ -->
+        <!-- ลิงก์รูปภาพป้ายแบนเนอร์ไปที่เว็บไซต์ -->
         <div class="banner-container">
             <a href="https://www.ksservice89.com/home" target="_blank" rel="noopener noreferrer" class="banner-link" title="คลิกเพื่อไปยังเว็บไซต์ KS.SERVICE">
                 <svg xmlns="http://www.w3.org/2000/svg" width="550" height="110" viewBox="0 0 550 110">
@@ -154,6 +198,7 @@
                     </defs>
                     <rect width="550" height="110" rx="12" fill="url(#grad)" />
                     <circle cx="50" cy="55" r="30" fill="#ffffff" fill-opacity="0.15" />
+                    <!-- ไอคอนโลโก้ในแบนเนอร์ -->
                     <path d="M50 35 C40 35 32 43 32 55 C32 67 50 82 50 82 C50 82 68 67 68 55 C68 43 60 35 50 35 Z" fill="#ffffff" />
                     <text x="95" y="48" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#ffffff">KS.SERVICE (เกียรติพงษ์)</text>
                     <text x="95" y="73" font-family="Arial, sans-serif" font-size="14" fill="#e0e7ff">คลิกที่นี่เพื่อเข้าชมเว็บไซต์ www.ksservice89.com</text>
@@ -172,3 +217,4 @@
 
 </body>
 </html>
+
