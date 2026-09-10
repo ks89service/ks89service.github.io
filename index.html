@@ -48,7 +48,6 @@
             border-top: 5px solid #0f52ba;
         }
 
-        /* กรอบแสดงภาพปกเว็บไซต์แบบเต็มสัดส่วน */
         .cover-banner {
             width: 100%;
             border-radius: 12px;
@@ -184,10 +183,20 @@
         .contact-section {
             background: linear-gradient(135deg, #0f52ba 0%, #081028 100%);
             color: #ffffff;
-            padding: 22px 25px;
+            padding: 25px;
             border-radius: 12px;
             margin-top: 25px;
             box-shadow: 0 8px 20px rgba(15, 82, 186, 0.25);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .contact-info {
+            flex: 1;
+            min-width: 220px;
         }
 
         .contact-section h3 {
@@ -195,18 +204,49 @@
             border: none;
             padding: 0;
             margin-top: 0;
+            margin-bottom: 12px;
         }
 
-        .contact-section a {
+        .contact-btn {
             color: #ffffff;
             text-decoration: none;
-            font-size: 20px;
+            font-size: 18px;
             font-weight: 700;
             background-color: rgba(255, 255, 255, 0.15);
-            padding: 6px 16px;
+            padding: 8px 18px;
             border-radius: 20px;
-            display: inline-block;
-            margin-top: 5px;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            margin-top: 8px;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+
+        .qr-card {
+            text-align: center;
+            background: #ffffff;
+            padding: 12px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+            transition: transform 0.2s;
+        }
+
+        .qr-card:hover {
+            transform: scale(1.03);
+        }
+
+        .qr-card img {
+            width: 130px;
+            height: 130px;
+            border-radius: 8px;
+            display: block;
+        }
+
+        .qr-card p {
+            margin: 6px 0 0 0;
+            color: #06c755;
+            font-size: 12px;
+            font-weight: 700;
         }
 
         .float-call {
@@ -231,6 +271,10 @@
                 flex-direction: column;
                 text-align: center;
             }
+            .contact-section {
+                flex-direction: column;
+                text-align: center;
+            }
             .container {
                 padding: 15px;
             }
@@ -240,7 +284,7 @@
 <body>
 
     <div class="container">
-        <!-- ภาพปกด้านบนสุดของเว็บไซต์ (Cover Banner) -->
+        <!-- ภาพปกด้านบนสุด -->
         <div class="cover-banner">
             <img src="bg.jpg" alt="KS.SERVICE ภาพปกผลงานช่างซ่อมปั๊มน้ำ">
         </div>
@@ -252,7 +296,7 @@
             </div>
             <div class="brand-title">
                 <h1>KS.SERVICE ช่างซ่อมปั๊มน้ำใกล้ฉัน (เกียรติพงษ์)</h1>
-                <p>บริการซ่อม-ติดตั้งปั๊มน้ำ-ปั๊มสูบระบายน้ำ-และระบบประปา</p>
+                <p>บริการซ่อม-ติดตั้งปั๊มน้ำและระบบประปาครบวงจร</p>
             </div>
         </div>
 
@@ -271,7 +315,7 @@
             </ul>
         </div>
 
-        <!-- พื้นที่ให้บริการแบบ Tag -->
+        <!-- พื้นที่ให้บริการ -->
         <div class="box">
             <h3>📍 เขตพื้นที่ให้บริการใกล้เคียง</h3>
             <div class="area-tags">
@@ -297,7 +341,7 @@
             </div>
         </div>
 
-        <!-- ลิงก์รูปภาพป้ายแบนเนอร์โทนไพลิน -->
+        <!-- ลิงก์รูปภาพป้ายแบนเนอร์ -->
         <div class="banner-container">
             <a href="https://www.ksservice89.com/home" target="_blank" rel="noopener noreferrer" class="banner-link" title="คลิกเพื่อไปยังเว็บไซต์ KS.SERVICE">
                 <svg xmlns="http://www.w3.org/2000/svg" width="550" height="110" viewBox="0 0 550 110">
@@ -313,19 +357,32 @@
                     <text x="95" y="48" font-family="'Prompt', Arial, sans-serif" font-size="20" font-weight="bold" fill="#ffffff">KS.SERVICE (เกียรติพงษ์)</text>
                     <text x="95" y="73" font-family="'Prompt', Arial, sans-serif" font-size="14" fill="#bae6fd">คลิกที่นี่เพื่อเข้าชมเว็บไซต์ www.ksservice89.com</text>
                     <rect x="410" y="38" width="120" height="34" rx="17" fill="#d4af37" />
-                    <text x="470" y="60" font-family="'Prompt', Arial, sans-serif" font-size="13" font-weight="bold" fill="#081028" text-anchor="middle">ไปที่เว็บไซต์หลัก ➔</text>
+                    <text x="470" y="60" font-family="'Prompt', Arial, sans-serif" font-size="13" font-weight="bold" fill="#081028" text-anchor="middle">ไปที่เว็บไซต์ ➔</text>
                 </svg>
             </a>
         </div>
 
-        <!-- ส่วนติดต่อสอบถาม -->
+        <!-- ส่วนติดต่อสอบถามด่วน พร้อมช่อง QR Code LINE -->
         <div class="contact-section">
-            <h3>📞 ช่องทางการติดต่อด่วน</h3>
-            <p style="margin:0;"><strong>เบอร์โทรศัพท์ / LINE/ID:</strong> <a href="https://line.me/ti/p/EUJqXVHGGA">082-712-7490</a></p>
+            <div class="contact-info">
+                <h3>📞 ช่องทางการติดต่อด่วน</h3>
+                <p style="margin: 0 0 8px 0;"><strong>เบอร์โทรศัพท์:</strong></p>
+                <a href="tel:0827127490" class="contact-btn">
+                    <i class="fas fa-phone-alt"></i> 082-712-7490
+                </a>
+            </div>
+
+            <!-- กล่อง QR Code กดเด้งไปลิงก์ LINE โดยตรง -->
+            <a href="https://line.me/ti/p/EUJqXVHGGA" target="_blank" style="text-decoration: none;">
+                <div class="qr-card">
+                    <img src="qr.png" alt="QR Code LINE ช่างซ่อมปั๊มน้ำ">
+                    <p><i class="fab fa-line"></i> แตะเพื่อแอด LINE</p>
+                </div>
+            </a>
         </div>
     </div>
 
-    <!-- ปุ่มโทรลอยสำหรับหน้าจอมือถือ -->
+    <!-- ปุ่มโทรลอยสำหรับมือถือ -->
     <a href="tel:0827127490" class="float-call">
         <i class="fas fa-phone-alt"></i> โทรติดต่อช่าง
     </a>
