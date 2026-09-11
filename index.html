@@ -8,7 +8,7 @@
     <title>KS.SERVICE (ซ่อมติดตั้งระบบปั๊มน้ำ) - ช่างซ่อมปั๊มน้ำใกล้ฉัน</title>
 
     <!-- Google Fonts - Prompt -->
-    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
     <!-- Schema.org -->
@@ -48,6 +48,7 @@
             border-top: 5px solid #0f52ba;
         }
 
+        /* ภาพปกด้านบนสุด */
         .cover-banner {
             width: 100%;
             border-radius: 12px;
@@ -120,7 +121,7 @@
             color: #0b2545;
             border-left: 4px solid #0f52ba;
             padding-left: 12px;
-            margin-top: 25px;
+            margin-top: 10px;
             font-size: 19px;
             font-weight: 600;
         }
@@ -133,6 +134,15 @@
             border: 1px solid #e2e8f0;
         }
 
+        /* ใส่รูปภาพเป็น Background ซ้อนหลังตัวหนังสือ */
+        .box-bg-image {
+            background: linear-gradient(rgba(255, 255, 255, 0.88), rgba(255, 255, 255, 0.88)), url('bg.jpg');
+            background-size: cover;
+            background-position: center;
+            border: 1px solid #cbd5e1;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+        }
+
         ul.service-list {
             padding-left: 20px;
             margin: 0;
@@ -140,7 +150,9 @@
 
         ul.service-list li {
             margin-bottom: 10px;
-            font-size: 15px;
+            font-size: 15.5px;
+            font-weight: 500;
+            color: #0f172a;
         }
 
         .area-tags {
@@ -207,27 +219,19 @@
             margin-bottom: 12px;
         }
 
-        /* ปรับแต่งปุ่มเบอร์โทรให้โดดเด่นสะดุดตา */
         .contact-btn {
-            color: #081028;
+            color: #ffffff;
             text-decoration: none;
-            font-size: 22px;
-            font-weight: 800;
-            background: linear-gradient(135deg, #ffeb3b 0%, #ffd700 100%);
-            padding: 10px 24px;
-            border-radius: 30px;
+            font-size: 18px;
+            font-weight: 700;
+            background-color: rgba(255, 255, 255, 0.15);
+            padding: 8px 18px;
+            border-radius: 20px;
             display: inline-flex;
             align-items: center;
-            gap: 10px;
+            gap: 8px;
             margin-top: 8px;
-            border: 2px solid #ffffff;
-            box-shadow: 0 4px 18px rgba(255, 235, 59, 0.5);
-            transition: transform 0.2s, box-shadow 0.2s;
-        }
-
-        .contact-btn:hover {
-            transform: scale(1.05);
-            box-shadow: 0 6px 24px rgba(255, 235, 59, 0.8);
+            border: 1px solid rgba(255, 255, 255, 0.3);
         }
 
         .qr-card {
@@ -292,7 +296,7 @@
 <body>
 
     <div class="container">
-        <!-- 1. ภาพปกด้านบนสุด -->
+        <!-- ภาพปกด้านบนสุด -->
         <div class="cover-banner">
             <img src="bg.jpg" alt="KS.SERVICE ภาพปกผลงานช่างซ่อมปั๊มน้ำ">
         </div>
@@ -310,8 +314,8 @@
 
         <p class="intro-text">🛠️ ให้บริการซ่อม-ติดตั้งปั๊มน้ำและระบบประปา โทรติดต่อสอบถามแก้ไขปัญหาหรือเรียกใช้บริการช่างได้เลยครับ</p>
 
-        <!-- รายการขอบเขตบริการ -->
-        <div class="box">
+        <!-- รายการขอบเขตบริการ (มีรูปภาพซ้อนด้านหลังตัวหนังสือ) -->
+        <div class="box box-bg-image">
             <h3>💧 ขอบเขตงานบริการ</h3>
             <ul class="service-list">
                 <li>รับซ่อมและงานติดตั้ง ปั๊มน้ำ / ปั๊มสูบน้ำ ทุกชนิด</li>
@@ -321,11 +325,6 @@
                 <li>ท่อสูบน้ำพญานาค / ไดโว่ปั๊มจุ่มสูบน้ำเสีย</li>
                 <li>งานเดินระบบท่อประปา PPR / PVC</li>
             </ul>
-        </div>
-
-        <!-- 2. ภาพปกส่วนกลาง (ภาพผลงาน/หน้างานจริง) -->
-        <div class="cover-banner" style="margin-top: 25px;">
-            <img src="bg-mid.jpg" alt="ผลงานซ่อมและติดตั้งปั๊มน้ำ KS.SERVICE">
         </div>
 
         <!-- พื้นที่ให้บริการ -->
@@ -375,11 +374,6 @@
             </a>
         </div>
 
-        <!-- 3. ภาพปกส่วนท้าย (ภาพก่อนเข้ากล่องติดต่อ) -->
-        <div class="cover-banner">
-            <img src="bg-bottom.jpg" alt="ช่างซ่อมปั๊มน้ำใกล้ฉัน KS.SERVICE">
-        </div>
-
         <!-- ส่วนติดต่อสอบถามด่วน พร้อมช่อง QR Code LINE -->
         <div class="contact-section">
             <div class="contact-info">
@@ -406,5 +400,5 @@
     </a>
 
 </body>
-                    </html>
-                    
+    </html>
+    
